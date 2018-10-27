@@ -109,6 +109,15 @@ const tasks = {
       spawn('yarn bootstrap:crna-kitchen-sink');
     },
   }),
+  'expo-kitchen-sink': createTask({
+    name: `React-Native-App example ${chalk.gray('(expo-kitchen-sink)')}`,
+    defaultValue: false,
+    option: '--reactnativeapp',
+    pre: ['packs'],
+    command: () => {
+      spawn('yarn bootstrap:expo-kitchen-sink');
+    },
+  }),
 };
 
 Object.keys(tasks)

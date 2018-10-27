@@ -17,6 +17,7 @@
   "scripts": {
     "bootstrap": "node ./scripts/bootstrap.js",
     "bootstrap:crna-kitchen-sink": "npm --prefix examples-native/crna-kitchen-sink install",
+    "bootstrap:expo-kitchen-sink": "npm --prefix examples-native/expo-kitchen-sink install",
     "bootstrap:docs": "yarn install --cwd docs",
     "build-packs": "lerna exec --scope '@storybook/*' --parallel -- \\$LERNA_ROOT_PATH/scripts/build-pack.sh \\$LERNA_ROOT_PATH/packs",
     "build-storybooks": "./scripts/build-storybooks.sh",
@@ -75,7 +76,7 @@
     "commander": "^2.19.0",
     "concurrently": "^4.0.1",
     "cross-env": "^5.2.0",
-    "danger": "^6.0.2",
+    "danger": "^4.4.8",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.6.0",
     "eslint": "^5.7.0",
