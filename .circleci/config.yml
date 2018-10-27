@@ -176,9 +176,14 @@ jobs:
           name: Bootstrap
           command: yarn bootstrap --reactnativeapp
       - run:
-          name: Run React-Native-App example
+          name: Run react-native crna kitchen-sink (smoke test)
           command: |
             cd examples-native/crna-kitchen-sink
+            yarn storybook --smoke-test
+      - run:
+          name: Run react-native expo kitchen-sink (smoke test)
+          command: |
+            cd examples-native/expo-kitchen-sink
             yarn storybook --smoke-test
   docs:
     <<: *defaults
