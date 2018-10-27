@@ -124,7 +124,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/react-native*/**', '**/REACT_NATIVE*/**', '**/crna*/**'],
+      files: ['**/examples-native*/**', '**/REACT_NATIVE*/**'],
       rules: {
         'jsx-a11y/accessible-emoji': ignore,
       },
